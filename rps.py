@@ -11,7 +11,7 @@ losses = 0
 print('welcome to rock, paper, scissors...\n')
 while True:
 #Moves
-    user_sel = input(f'[1]rock \n[2]paper \n[3]scissors \n[input]:')
+    user_sel = input(f'[1]rock \n[2]paper \n[3]scissors \n[input]: ')
     opp_sel = random.choice(moves)
 #Rock
     if user_sel == '1' and opp_sel == 'rock':
@@ -21,6 +21,7 @@ while True:
         game = game + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 
     if user_sel == '1' and opp_sel == 'paper':
         time.sleep(1)
@@ -30,6 +31,7 @@ while True:
         losses = losses + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 
     if user_sel == '1' and opp_sel == 'scissors':
         time.sleep(1)
@@ -39,6 +41,7 @@ while True:
         wins = wins + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 #Paper
     if user_sel == '2' and opp_sel == 'rock':
         time.sleep(1)
@@ -48,6 +51,7 @@ while True:
         wins = wins + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 
     if user_sel == '2' and opp_sel == 'paper':
         time.sleep(1)
@@ -56,6 +60,7 @@ while True:
         game = game + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 
     if user_sel == '2' and opp_sel == 'scissors':
         time.sleep(1)
@@ -65,6 +70,7 @@ while True:
         losses = losses + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 #Scissors
     if user_sel == '3' and opp_sel == 'rock':
         time.sleep(1)
@@ -74,6 +80,7 @@ while True:
         losses = losses + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 
     if user_sel == '3' and opp_sel == 'paper':
         time.sleep(1)
@@ -83,6 +90,7 @@ while True:
         wins = wins + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 
     if user_sel == '3' and opp_sel == 'scissors':
         time.sleep(1)
@@ -91,6 +99,7 @@ while True:
         game = game + 1
         print('---Score---\n[game]:', game, '\n[wins]:', wins, '\n[losses]:', losses, '\n')
         time.sleep(1)
+        continue
 #Quit
     if user_sel == 'quit': quit()
 #Input Error
